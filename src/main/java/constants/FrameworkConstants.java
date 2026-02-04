@@ -85,6 +85,7 @@ public final class FrameworkConstants {
     public static final String DEFAULT_BROWSER = "chrome";
     public static final String DEFAULT_ENVIRONMENT = "qa";
     public static final String EXECUTION_MODE = "local"; // local or remote
+    public static final String APP_URL = "https://www.saucedemo.com/";
    
     
     // ==================== SELENIUM GRID SETTINGS ====================

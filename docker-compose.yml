@@ -1,0 +1,35 @@
+version: "3.9"
+
+services:
+  selenium-hub:
+    image: selenium/hub:4.18.0
+    container_name: selenium-hub
+    ports:
+      - "4444:4444"
+    environment:
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      - SE_ENABLE_TRACING=false
+    networks:
+      - selenium-grid
+
+  chrome:
+    image: selenium/node-chrome:4.18.0
+    shm_size: "2g"
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      - SE_NODE_MAX_SESSIONS=2
+      - SE_NODE_SESSION_TIMEOUT=300
+      - SE_VNC_NO_PASSWORD=1
+    ports:
+      - "7900:7900"
+    networks:
+      - selenium-grid
+
+networks:
+  selenium-grid:
+    driver: bridge

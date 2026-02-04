@@ -80,7 +80,7 @@
                 <version>3.2.5</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/java/testsuites/regression-suite.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/java/testsuites/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

@@ -2,28 +2,57 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-04T17:59:01 IST" name="Regression Test Suite" finished-at="2026-02-04T17:59:14 IST" duration-ms="12779">
+  <suite started-at="2026-02-04T20:29:53 IST" name="Cross Browser Parallel Test Suite" finished-at="2026-02-04T20:30:05 IST" duration-ms="12437">
     <groups>
     </groups>
-    <test started-at="2026-02-04T17:59:01 IST" name="Login Tests" finished-at="2026-02-04T17:59:14 IST" duration-ms="12779">
+    <test started-at="2026-02-04T20:29:53 IST" name="Chrome Tests" finished-at="2026-02-04T20:30:05 IST" duration-ms="12437">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@5a85c92]" started-at="2026-02-04T17:59:01 IST" name="setUp" finished-at="2026-02-04T17:59:03 IST" duration-ms="2176" status="PASS">
+        <test-method is-config="true" signature="setupFramework()[pri:0, instance:tests.LoginTest@6da00fb9]" started-at="2026-02-04T20:29:53 IST" name="setupFramework" finished-at="2026-02-04T20:29:53 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@5a85c92]" started-at="2026-02-04T17:59:01 IST" name="setUp" finished-at="2026-02-04T17:59:03 IST" duration-ms="2318" status="PASS">
+        </test-method> <!-- setupFramework -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LoginTest@6da00fb9]" started-at="2026-02-04T20:29:53 IST" name="setup" finished-at="2026-02-04T20:29:55 IST" duration-ms="1980" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@5a85c92]" started-at="2026-02-04T17:59:01 IST" name="setUp" finished-at="2026-02-04T17:59:03 IST" duration-ms="2029" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LoginTest@6da00fb9]" started-at="2026-02-04T20:29:53 IST" name="setup" finished-at="2026-02-04T20:29:54 IST" duration-ms="1855" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testInvalidLogin()[pri:2, instance:tests.LoginTest@5a85c92]" started-at="2026-02-04T17:59:03 IST" name="testInvalidLogin" description="Verify login with invalid credentials" finished-at="2026-02-04T17:59:14 IST" duration-ms="10446" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LoginTest@6da00fb9]" started-at="2026-02-04T20:29:53 IST" name="setup" finished-at="2026-02-04T20:29:55 IST" duration-ms="1860" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testValidLogin()[pri:1, instance:tests.LoginTest@6da00fb9]" started-at="2026-02-04T20:29:54 IST" name="testValidLogin" description="Verify login with valid credentials" finished-at="2026-02-04T20:29:55 IST" duration-ms="387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method signature="testInvalidLogin()[pri:2, instance:tests.LoginTest@6da00fb9]" started-at="2026-02-04T20:29:55 IST" name="testInvalidLogin" description="Verify login with invalid credentials" finished-at="2026-02-04T20:30:05 IST" duration-ms="10316" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLogin -->
-        <test-method signature="testLoginWithDataProvider(java.lang.String,java.lang.String)[pri:3, instance:tests.LoginTest@5a85c92]" started-at="2026-02-04T17:59:03 IST" name="testLoginWithDataProvider" data-provider="loginData" finished-at="2026-02-04T17:59:04 IST" duration-ms="427" status="PASS">
+        <test-method signature="testLoginWithDataProvider(java.lang.String,java.lang.String)[pri:3, instance:tests.LoginTest@6da00fb9]" started-at="2026-02-04T20:29:55 IST" name="testLoginWithDataProvider" data-provider="loginData" finished-at="2026-02-04T20:29:55 IST" duration-ms="412" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,23 +68,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithDataProvider -->
-        <test-method signature="testValidLogin()[pri:1, instance:tests.LoginTest@5a85c92]" started-at="2026-02-04T17:59:03 IST" name="testValidLogin" description="Verify login with valid credentials" finished-at="2026-02-04T17:59:04 IST" duration-ms="353" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginTest@6da00fb9]" started-at="2026-02-04T20:29:55 IST" name="teardown" finished-at="2026-02-04T20:29:55 IST" duration-ms="87" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@5a85c92]" started-at="2026-02-04T17:59:04 IST" name="tearDown" finished-at="2026-02-04T17:59:04 IST" duration-ms="93" status="PASS">
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginTest@6da00fb9]" started-at="2026-02-04T20:29:55 IST" name="teardown" finished-at="2026-02-04T20:29:55 IST" duration-ms="86" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@5a85c92]" started-at="2026-02-04T17:59:04 IST" name="tearDown" finished-at="2026-02-04T17:59:04 IST" duration-ms="94" status="PASS">
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginTest@6da00fb9]" started-at="2026-02-04T20:30:05 IST" name="teardown" finished-at="2026-02-04T20:30:05 IST" duration-ms="93" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@5a85c92]" started-at="2026-02-04T17:59:14 IST" name="tearDown" finished-at="2026-02-04T17:59:14 IST" duration-ms="97" status="PASS">
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="cleanupFramework()[pri:0, instance:tests.LoginTest@6da00fb9]" started-at="2026-02-04T20:30:05 IST" name="cleanupFramework" finished-at="2026-02-04T20:30:05 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
+        </test-method> <!-- cleanupFramework -->
       </class> <!-- tests.LoginTest -->
-    </test> <!-- Login Tests -->
-  </suite> <!-- Regression Test Suite -->
+    </test> <!-- Chrome Tests -->
+  </suite> <!-- Cross Browser Parallel Test Suite -->
 </testng-results>

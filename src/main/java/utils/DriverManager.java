@@ -1,7 +1,5 @@
 package utils;
 
-
-import constants.FrameworkConstants;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,16 +8,25 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import utils.ConfigReader;
+import utils.LogUtil;
+
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.time.Duration;
 
 /**
- * DriverManager - Manages WebDriver lifecycle
- * Uses ThreadLocal for thread-safe parallel execution
- * Singleton pattern ensures proper driver management
+ * DriverManager - Manages WebDriver instances with Grid support
+ * 
+ * Supports both local and remote (Selenium Grid) execution
+ * Thread-safe for parallel test execution
+ * 
+ * @author Automation Team
+ * @version 2.0
  */
 public class DriverManager {
     
-    // ThreadLocal ensures each thread has its own WebDriver instance
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
     
     /**
@@ -31,81 +38,205 @@ public class DriverManager {
     }
     
     /**
-     * Set WebDriver instance for current thread
-     * @param driverInstance - WebDriver to set
-     */
-    private static void setDriver(WebDriver driverInstance) {
-        driver.set(driverInstance);
-    }
-    
-    /**
-     * Initialize WebDriver based on config.properties
-     * Sets up browser with options and timeouts
+     * Initialize WebDriver based on configuration
+     * Supports both local and remote execution
      */
     public static void initializeDriver() {
         String browser = ConfigReader.getBrowser().toLowerCase();
-        boolean headless = ConfigReader.isHeadless();
+        boolean isRemote = ConfigReader.isRemoteExecution();
         
-        WebDriver webDriver = null;
+        LogUtil.info("Initializing driver - Browser: " + browser + 
+                    ", Execution Mode: " + (isRemote ? "Remote (Grid)" : "Local"));
         
-        switch (browser) {
-            case FrameworkConstants.CHROME:
-                WebDriverManager.chromedriver().setup();
-                ChromeOptions chromeOptions = new ChromeOptions();
-                if (headless) {
-                    chromeOptions.addArguments("--headless=new");
-                }
-                chromeOptions.addArguments("--disable-notifications");
-                chromeOptions.addArguments("--start-maximized");
-                chromeOptions.addArguments("--disable-popup-blocking");
-                chromeOptions.addArguments("--disable-dev-shm-usage");
-                chromeOptions.addArguments("--no-sandbox");
-                webDriver = new ChromeDriver(chromeOptions);
-                break;
-                
-            case FrameworkConstants.FIREFOX:
-                WebDriverManager.firefoxdriver().setup();
-                FirefoxOptions firefoxOptions = new FirefoxOptions();
-                if (headless) {
-                    firefoxOptions.addArguments("--headless");
-                }
-                webDriver = new FirefoxDriver(firefoxOptions);
-                webDriver.manage().window().maximize();
-                break;
-                
-            case FrameworkConstants.EDGE:
-                WebDriverManager.edgedriver().setup();
-                EdgeOptions edgeOptions = new EdgeOptions();
-                if (headless) {
-                    edgeOptions.addArguments("--headless=new");
-                }
-                edgeOptions.addArguments("--start-maximized");
-                webDriver = new EdgeDriver(edgeOptions);
-                break;
-                
-            default:
-                throw new IllegalArgumentException("Browser not supported: " + browser);
+        WebDriver webDriver;
+        
+        if (isRemote) {
+            webDriver = createRemoteDriver(browser);
+        } else {
+            webDriver = createLocalDriver(browser);
         }
         
-        // Set timeouts
-        webDriver.manage().timeouts().implicitlyWait(
-            Duration.ofSeconds(ConfigReader.getImplicitWait()));
-        webDriver.manage().timeouts().pageLoadTimeout(
-            Duration.ofSeconds(FrameworkConstants.PAGE_LOAD_TIMEOUT));
+        // Set implicit wait
+        webDriver.manage().timeouts()
+            .implicitlyWait(Duration.ofSeconds(ConfigReader.getImplicitWait()));
         
-        setDriver(webDriver);
-        LogUtil.info("Browser initialized: " + browser + " | Headless: " + headless);
+        // Set page load timeout
+        webDriver.manage().timeouts()
+            .pageLoadTimeout(Duration.ofSeconds(ConfigReader.getPageLoadTimeout()));
+        
+        // Maximize window if configured
+        if (!ConfigReader.isHeadless()) {
+            webDriver.manage().window().maximize();
+        }
+        
+        driver.set(webDriver);
+        LogUtil.info("Driver initialized successfully");
     }
     
     /**
-     * Quit WebDriver and remove from ThreadLocal
-     * Should be called in @AfterMethod or @AfterClass
+     * Create local WebDriver instance
+     * @param browser browser name
+     * @return WebDriver instance
+     */
+    private static WebDriver createLocalDriver(String browser) {
+        WebDriver webDriver;
+        
+        switch (browser) {
+            case "chrome":
+                WebDriverManager.chromedriver().setup();
+                webDriver = new ChromeDriver(getChromeOptions());
+                break;
+                
+            case "firefox":
+                WebDriverManager.firefoxdriver().setup();
+                webDriver = new FirefoxDriver(getFirefoxOptions());
+                break;
+                
+            case "edge":
+                WebDriverManager.edgedriver().setup();
+                webDriver = new EdgeDriver(getEdgeOptions());
+                break;
+                
+            default:
+                LogUtil.warn("Invalid browser: " + browser + ". Using Chrome as default.");
+                WebDriverManager.chromedriver().setup();
+                webDriver = new ChromeDriver(getChromeOptions());
+        }
+        
+        return webDriver;
+    }
+    
+    /**
+     * Create remote WebDriver instance for Selenium Grid
+     * @param browser browser name
+     * @return RemoteWebDriver instance
+     */
+    private static WebDriver createRemoteDriver(String browser) {
+        String gridUrl = ConfigReader.getGridUrl();
+        
+        try {
+            URL hubUrl = new URL(gridUrl + "/wd/hub");
+            RemoteWebDriver remoteDriver;
+            
+            switch (browser.toLowerCase()) {
+                case "chrome":
+                    remoteDriver = new RemoteWebDriver(hubUrl, getChromeOptions());
+                    break;
+                    
+                case "firefox":
+                    remoteDriver = new RemoteWebDriver(hubUrl, getFirefoxOptions());
+                    break;
+                    
+                case "edge":
+                    remoteDriver = new RemoteWebDriver(hubUrl, getEdgeOptions());
+                    break;
+                    
+                default:
+                    LogUtil.warn("Invalid browser: " + browser + ". Using Chrome as default.");
+                    remoteDriver = new RemoteWebDriver(hubUrl, getChromeOptions());
+            }
+            
+            LogUtil.info("Remote driver created - Grid URL: " + gridUrl + 
+                        ", Browser: " + browser);
+            return remoteDriver;
+            
+        } catch (MalformedURLException e) {
+            LogUtil.error("Invalid Grid URL: " + gridUrl, e);
+            throw new RuntimeException("Failed to create remote driver", e);
+        }
+    }
+    
+    /**
+     * Get Chrome options with common configurations
+     * @return ChromeOptions
+     */
+    private static ChromeOptions getChromeOptions() {
+        ChromeOptions options = new ChromeOptions();
+        
+        // Headless mode
+        if (ConfigReader.isHeadless()) {
+            options.addArguments("--headless=new");
+        }
+        
+        // Common arguments
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-gpu");
+        options.addArguments("--window-size=1920,1080");
+        options.addArguments("--disable-extensions");
+        options.addArguments("--disable-popup-blocking");
+        
+        // Disable notifications
+        options.addArguments("--disable-notifications");
+        
+        // Performance improvements
+        options.setExperimentalOption("excludeSwitches", 
+            new String[]{"enable-automation", "enable-logging"});
+        
+        LogUtil.debug("Chrome options configured");
+        return options;
+    }
+    
+    /**
+     * Get Firefox options with common configurations
+     * @return FirefoxOptions
+     */
+    private static FirefoxOptions getFirefoxOptions() {
+        FirefoxOptions options = new FirefoxOptions();
+        
+        // Headless mode
+        if (ConfigReader.isHeadless()) {
+            options.addArguments("--headless");
+        }
+        
+        // Common arguments
+        options.addArguments("--width=1920");
+        options.addArguments("--height=1080");
+        
+        // Disable notifications
+        options.addPreference("dom.webnotifications.enabled", false);
+        
+        LogUtil.debug("Firefox options configured");
+        return options;
+    }
+    
+    /**
+     * Get Edge options with common configurations
+     * @return EdgeOptions
+     */
+    private static EdgeOptions getEdgeOptions() {
+        EdgeOptions options = new EdgeOptions();
+        
+        // Headless mode
+        if (ConfigReader.isHeadless()) {
+            options.addArguments("--headless=new");
+        }
+        
+        // Common arguments
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-gpu");
+        options.addArguments("--window-size=1920,1080");
+        options.addArguments("--disable-extensions");
+        
+        LogUtil.debug("Edge options configured");
+        return options;
+    }
+    
+    /**
+     * Quit and remove driver from current thread
      */
     public static void quitDriver() {
-        if (getDriver() != null) {
-            getDriver().quit();
-            driver.remove();
-            LogUtil.info("Browser closed successfully");
+        WebDriver webDriver = driver.get();
+        if (webDriver != null) {
+            try {
+                webDriver.quit();
+                LogUtil.info("Driver quit successfully");
+            } catch (Exception e) {
+                LogUtil.warn("Error while quitting driver: " + e.getMessage());
+            } finally {
+                driver.remove();
+            }
         }
     }
 }

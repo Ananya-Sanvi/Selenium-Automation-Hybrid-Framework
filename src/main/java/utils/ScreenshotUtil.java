@@ -25,7 +25,7 @@ public class ScreenshotUtil {
     public static String captureScreenshot(WebDriver driver, String screenshotName) {
         String timestamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
         String fileName = screenshotName + "_" + timestamp + ".png";
-        String destination = FrameworkConstants.SCREENSHOTS_PATH+ fileName;
+        String destination = FrameworkConstants.SCREENSHOTS_PATH + File.separator + fileName;
         
         try {
             // Create screenshots directory if not exists

@@ -113,7 +113,7 @@ public final class ConfigReader {
         if (url == null) {
             LogUtil.warn("URL not found for environment: " + environment + 
                         ". Using default URL.");
-            url = getProperty("url", "http://localhost:8080");
+            url = getProperty("url", "https://www.saucedemo.com/");
         }
         
         return url;
@@ -210,8 +210,13 @@ public final class ConfigReader {
      * @return retry count
      */
     public static int getRetryCount() {
+        String retryEnabled = getProperty("retry.enabled", "true");
+        if ("false".equalsIgnoreCase(retryEnabled)) {
+            return 0; // Retry disabled
+    }
+    
         return Integer.parseInt(getProperty("retry.count", 
-               String.valueOf(FrameworkConstants.MAX_RETRY_COUNT)));
+           String.valueOf(FrameworkConstants.MAX_RETRY_COUNT)));
     }
     
     // ==================== SCREENSHOT CONFIGURATION ====================
@@ -261,5 +266,13 @@ public final class ConfigReader {
      */
     public static String getPassword() {
         return getProperty("password", "");
+    }
+
+    /**
+     * Check if retry is enabled
+     * @return true if enabled
+     */
+    public static boolean isRetryEnabled() {
+        return Boolean.parseBoolean(getProperty("retry.enabled", "true"));
     }
 }

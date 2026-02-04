@@ -10,6 +10,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import reports.ExtentReportManager;
+import utils.ConfigReader;
 import utils.LogUtil;
 import utils.ScreenshotUtil;
 
@@ -220,6 +221,14 @@ public class TestListener implements ITestListener {
     private boolean shouldCaptureScreenshotOnPass() {
         // You can read this from config.properties
         // For now, returning false (only capture on failure)
-        return false;
+        try {
+            java.lang.reflect.Method method = ConfigReader.class.getDeclaredMethod("getProperty", String.class);
+            method.setAccessible(true);
+            String value = (String) method.invoke(null, "screenshot.on.pass");
+            return Boolean.parseBoolean(value);
+        } catch (Exception e) {
+            LogUtil.warn("Could not access ConfigReader.getProperty: " + e.getMessage());
+            return false;
+        }
     }
 }
