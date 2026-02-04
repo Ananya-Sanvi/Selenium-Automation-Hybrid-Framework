@@ -1,0 +1,416 @@
+2026-02-04 17:20:58.849 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - ========== Test Setup Started ==========
+2026-02-04 17:20:58.849 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - ========== Test Setup Started ==========
+2026-02-04 17:20:58.851 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Configuration loaded successfully from: /Users/ritesh-mac/Documents/Selenium Project/selenium-tests/src/test/resources/config/config.properties
+2026-02-04 17:20:59.017 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - Test data loaded from: TestData.xlsx | Sheet: Sheet1
+2026-02-04 17:20:59.018 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - ========== Test Setup Started ==========
+2026-02-04 17:21:00.695 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Browser initialized: chrome | Headless: false
+2026-02-04 17:21:00.695 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Browser initialized: chrome | Headless: false
+2026-02-04 17:21:00.695 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - Browser initialized: chrome | Headless: false
+2026-02-04 17:21:01.385 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Navigated to: https://www.saucedemo.com/
+2026-02-04 17:21:01.385 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Navigated to: https://www.saucedemo.com/
+2026-02-04 17:21:01.385 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - Navigated to: https://www.saucedemo.com/
+2026-02-04 17:21:01.400 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Test: Valid Login
+2026-02-04 17:21:01.400 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Test: Invalid Login
+2026-02-04 17:21:01.403 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Performing login with username: standard_user
+2026-02-04 17:21:01.403 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - Performing login with username: standard_user
+2026-02-04 17:21:01.403 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Performing login with username: Admin
+2026-02-04 17:21:02.136 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Entered username: Admin
+2026-02-04 17:21:02.136 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - Entered username: standard_user
+2026-02-04 17:21:02.136 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Entered username: standard_user
+2026-02-04 17:21:02.176 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Entered password
+2026-02-04 17:21:02.227 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - Entered password
+2026-02-04 17:21:02.227 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Entered password
+2026-02-04 17:21:02.271 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Clicked login button
+2026-02-04 17:21:02.302 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Clicked login button
+2026-02-04 17:21:02.321 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Login successful
+2026-02-04 17:21:02.323 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Valid login test passed
+2026-02-04 17:21:02.327 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - ========== Test Teardown Started ==========
+2026-02-04 17:21:02.370 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - Clicked login button
+2026-02-04 17:21:02.390 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - Login successful
+2026-02-04 17:21:02.391 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - ========== Test Teardown Started ==========
+2026-02-04 17:21:02.436 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Browser closed successfully
+2026-02-04 17:21:02.473 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - Browser closed successfully
+2026-02-04 17:21:12.288 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Login failed
+2026-02-04 17:21:12.302 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Invalid login test passed
+2026-02-04 17:21:12.303 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - ========== Test Teardown Started ==========
+2026-02-04 17:21:12.388 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Browser closed successfully
+2026-02-04 17:22:47.939 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - ========== Test Setup Started ==========
+2026-02-04 17:22:47.939 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - ========== Test Setup Started ==========
+2026-02-04 17:22:47.940 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Configuration loaded successfully from: /Users/ritesh-mac/Documents/Selenium Project/selenium-tests/src/test/resources/config/config.properties
+2026-02-04 17:22:48.124 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - Test data loaded from: TestData.xlsx | Sheet: Sheet1
+2026-02-04 17:22:48.125 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - ========== Test Setup Started ==========
+2026-02-04 17:22:49.106 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - Browser initialized: chrome | Headless: false
+2026-02-04 17:22:49.106 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Browser initialized: chrome | Headless: false
+2026-02-04 17:22:49.106 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Browser initialized: chrome | Headless: false
+2026-02-04 17:22:49.469 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - Navigated to: https://www.saucedemo.com/
+2026-02-04 17:22:49.469 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Navigated to: https://www.saucedemo.com/
+2026-02-04 17:22:49.481 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Test: Valid Login
+2026-02-04 17:22:49.483 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Performing login with username: standard_user
+2026-02-04 17:22:49.483 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - Performing login with username: standard_user
+2026-02-04 17:22:49.522 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Navigated to: https://www.saucedemo.com/
+2026-02-04 17:22:49.523 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Test: Invalid Login
+2026-02-04 17:22:49.524 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Performing login with username: Admin
+2026-02-04 17:22:49.936 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - Entered username: standard_user
+2026-02-04 17:22:49.936 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Entered username: standard_user
+2026-02-04 17:22:49.997 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Entered password
+2026-02-04 17:22:49.997 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Entered username: Admin
+2026-02-04 17:22:50.055 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - Entered password
+2026-02-04 17:22:50.100 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Entered password
+2026-02-04 17:22:50.135 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Clicked login button
+2026-02-04 17:22:50.142 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Clicked login button
+2026-02-04 17:22:50.154 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Login successful
+2026-02-04 17:22:50.155 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Valid login test passed
+2026-02-04 17:22:50.158 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - ========== Test Teardown Started ==========
+2026-02-04 17:22:50.193 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - Clicked login button
+2026-02-04 17:22:50.208 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - Login successful
+2026-02-04 17:22:50.208 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - ========== Test Teardown Started ==========
+2026-02-04 17:22:50.253 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Browser closed successfully
+2026-02-04 17:22:50.289 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - Browser closed successfully
+2026-02-04 17:23:00.175 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Login failed
+2026-02-04 17:23:00.190 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Invalid login test passed
+2026-02-04 17:23:00.190 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - ========== Test Teardown Started ==========
+2026-02-04 17:23:00.275 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Browser closed successfully
+2026-02-04 17:32:24.344 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - ========== Test Setup Started ==========
+2026-02-04 17:32:24.344 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - ========== Test Setup Started ==========
+2026-02-04 17:32:24.346 [TestNG-test-Login Tests-1] INFO  utils.ConfigReader - Configuration loaded successfully from: /Users/ritesh-mac/Documents/Selenium Project/selenium-tests/src/test/resources/config/config.properties
+2026-02-04 17:32:24.509 [TestNG-test-Login Tests-3] INFO  utils.ExcelReader - Test data loaded from: TestData.xlsx | Sheet: Sheet1
+2026-02-04 17:32:24.510 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - ========== Test Setup Started ==========
+2026-02-04 17:32:25.885 [TestNG-test-Login Tests-1] INFO  utils.DriverManager - Browser initialized: chrome | Headless: false
+2026-02-04 17:32:25.885 [TestNG-test-Login Tests-2] INFO  utils.DriverManager - Browser initialized: chrome | Headless: false
+2026-02-04 17:32:25.916 [TestNG-test-Login Tests-3] INFO  utils.DriverManager - Browser initialized: chrome | Headless: false
+2026-02-04 17:32:27.045 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Navigated to: https://www.saucedemo.com/
+2026-02-04 17:32:27.045 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Navigated to: https://www.saucedemo.com/
+2026-02-04 17:32:27.052 [TestNG-test-Login Tests-1] INFO  tests.LoginTest - Test: Valid Login
+2026-02-04 17:32:27.052 [TestNG-test-Login Tests-2] INFO  tests.LoginTest - Test: Invalid Login
+2026-02-04 17:32:27.053 [TestNG-test-Login Tests-2] INFO  actions.LoginAction - Performing login with username: Admin
+2026-02-04 17:32:27.053 [TestNG-test-Login Tests-1] INFO  actions.LoginAction - Performing login with username: standard_user
+2026-02-04 17:32:27.054 [TestNG-test-Login Tests-1] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: user-name
+2026-02-04 17:32:27.054 [TestNG-test-Login Tests-2] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: user-name
+2026-02-04 17:32:27.066 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - Navigated to: https://www.saucedemo.com/
+2026-02-04 17:32:27.067 [TestNG-test-Login Tests-3] INFO  actions.LoginAction - Performing login with username: standard_user
+2026-02-04 17:32:27.068 [TestNG-test-Login Tests-3] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: user-name
+2026-02-04 17:32:27.214 [TestNG-test-Login Tests-2] INFO  pages.LoginPage - Entered username: Admin
+2026-02-04 17:32:27.214 [TestNG-test-Login Tests-1] INFO  pages.LoginPage - Entered username: standard_user
+2026-02-04 17:32:27.214 [TestNG-test-Login Tests-2] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: password
+2026-02-04 17:32:27.214 [TestNG-test-Login Tests-3] INFO  pages.LoginPage - Entered username: standard_user
+2026-02-04 17:32:27.214 [TestNG-test-Login Tests-3] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: password
+2026-02-04 17:32:27.214 [TestNG-test-Login Tests-1] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: password
+2026-02-04 17:32:27.264 [TestNG-test-Login Tests-3] INFO  pages.LoginPage - Entered password
+2026-02-04 17:32:27.264 [TestNG-test-Login Tests-3] DEBUG utils.WaitHelper - Waiting for element to be clickable: By.id: login-button
+2026-02-04 17:32:27.301 [TestNG-test-Login Tests-1] INFO  pages.LoginPage - Entered password
+2026-02-04 17:32:27.301 [TestNG-test-Login Tests-2] INFO  pages.LoginPage - Entered password
+2026-02-04 17:32:27.301 [TestNG-test-Login Tests-1] DEBUG utils.WaitHelper - Waiting for element to be clickable: By.id: login-button
+2026-02-04 17:32:27.301 [TestNG-test-Login Tests-2] DEBUG utils.WaitHelper - Waiting for element to be clickable: By.id: login-button
+2026-02-04 17:32:27.343 [TestNG-test-Login Tests-2] INFO  pages.LoginPage - Clicked login button
+2026-02-04 17:32:27.385 [TestNG-test-Login Tests-3] INFO  pages.LoginPage - Clicked login button
+2026-02-04 17:32:27.399 [TestNG-test-Login Tests-3] INFO  actions.LoginAction - Login successful
+2026-02-04 17:32:27.401 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - ========== Test Teardown Started ==========
+2026-02-04 17:32:27.426 [TestNG-test-Login Tests-1] INFO  pages.LoginPage - Clicked login button
+2026-02-04 17:32:27.441 [TestNG-test-Login Tests-1] INFO  actions.LoginAction - Login successful
+2026-02-04 17:32:27.442 [TestNG-test-Login Tests-1] INFO  tests.LoginTest - Valid login test passed
+2026-02-04 17:32:27.443 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - ========== Test Teardown Started ==========
+2026-02-04 17:32:27.483 [TestNG-test-Login Tests-3] INFO  utils.DriverManager - Browser closed successfully
+2026-02-04 17:32:27.520 [TestNG-test-Login Tests-1] INFO  utils.DriverManager - Browser closed successfully
+2026-02-04 17:32:37.360 [TestNG-test-Login Tests-2] INFO  actions.LoginAction - Login failed
+2026-02-04 17:32:37.360 [TestNG-test-Login Tests-2] DEBUG utils.WaitHelper - Waiting for element to be visible: By.xpath: //div[@class='error-message-container error']/h3
+2026-02-04 17:32:37.389 [TestNG-test-Login Tests-2] INFO  tests.LoginTest - Invalid login test passed
+2026-02-04 17:32:37.390 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - ========== Test Teardown Started ==========
+2026-02-04 17:32:37.478 [TestNG-test-Login Tests-2] INFO  utils.DriverManager - Browser closed successfully
+2026-02-04 17:42:42.141 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - ========== Test Setup Started ==========
+2026-02-04 17:42:42.141 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - ========== Test Setup Started ==========
+2026-02-04 17:42:42.142 [TestNG-test-Login Tests-1] INFO  utils.ConfigReader - Configuration loaded successfully from: /Users/ritesh-mac/Documents/Selenium Project/selenium-tests/src/test/resources/config/config.properties
+2026-02-04 17:42:42.305 [TestNG-test-Login Tests-3] INFO  utils.ExcelReader - Test data loaded from: TestData.xlsx | Sheet: Sheet1
+2026-02-04 17:42:42.306 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - ========== Test Setup Started ==========
+2026-02-04 17:42:43.637 [TestNG-test-Login Tests-2] INFO  utils.DriverManager - Browser initialized: chrome | Headless: false
+2026-02-04 17:42:43.637 [TestNG-test-Login Tests-1] INFO  utils.DriverManager - Browser initialized: chrome | Headless: false
+2026-02-04 17:42:43.637 [TestNG-test-Login Tests-3] INFO  utils.DriverManager - Browser initialized: chrome | Headless: false
+2026-02-04 17:42:44.323 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - Navigated to: https://www.saucedemo.com/
+2026-02-04 17:42:44.323 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Navigated to: https://www.saucedemo.com/
+2026-02-04 17:42:44.323 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Navigated to: https://www.saucedemo.com/
+2026-02-04 17:42:44.326 [TestNG-test-Login Tests-1] INFO  tests.LoginTest - Test: Valid Login
+2026-02-04 17:42:44.326 [TestNG-test-Login Tests-2] INFO  tests.LoginTest - Test: Invalid Login
+2026-02-04 17:42:44.329 [TestNG-test-Login Tests-1] INFO  actions.LoginAction - Performing login with username: standard_user
+2026-02-04 17:42:44.329 [TestNG-test-Login Tests-2] INFO  actions.LoginAction - Performing login with username: Admin
+2026-02-04 17:42:44.329 [TestNG-test-Login Tests-3] INFO  actions.LoginAction - Performing login with username: standard_user
+2026-02-04 17:42:44.329 [TestNG-test-Login Tests-2] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: user-name
+2026-02-04 17:42:44.329 [TestNG-test-Login Tests-3] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: user-name
+2026-02-04 17:42:44.329 [TestNG-test-Login Tests-1] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: user-name
+2026-02-04 17:42:44.477 [TestNG-test-Login Tests-1] INFO  pages.LoginPage - Entered username: standard_user
+2026-02-04 17:42:44.477 [TestNG-test-Login Tests-3] INFO  pages.LoginPage - Entered username: standard_user
+2026-02-04 17:42:44.477 [TestNG-test-Login Tests-3] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: password
+2026-02-04 17:42:44.477 [TestNG-test-Login Tests-2] INFO  pages.LoginPage - Entered username: Admin
+2026-02-04 17:42:44.477 [TestNG-test-Login Tests-1] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: password
+2026-02-04 17:42:44.477 [TestNG-test-Login Tests-2] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: password
+2026-02-04 17:42:44.520 [TestNG-test-Login Tests-2] INFO  pages.LoginPage - Entered password
+2026-02-04 17:42:44.520 [TestNG-test-Login Tests-2] DEBUG utils.WaitHelper - Waiting for element to be clickable: By.id: login-button
+2026-02-04 17:42:44.574 [TestNG-test-Login Tests-3] INFO  pages.LoginPage - Entered password
+2026-02-04 17:42:44.574 [TestNG-test-Login Tests-1] INFO  pages.LoginPage - Entered password
+2026-02-04 17:42:44.574 [TestNG-test-Login Tests-3] DEBUG utils.WaitHelper - Waiting for element to be clickable: By.id: login-button
+2026-02-04 17:42:44.574 [TestNG-test-Login Tests-1] DEBUG utils.WaitHelper - Waiting for element to be clickable: By.id: login-button
+2026-02-04 17:42:44.586 [TestNG-test-Login Tests-2] INFO  pages.LoginPage - Clicked login button
+2026-02-04 17:42:44.700 [TestNG-test-Login Tests-1] INFO  pages.LoginPage - Clicked login button
+2026-02-04 17:42:44.725 [TestNG-test-Login Tests-1] INFO  actions.LoginAction - Login successful
+2026-02-04 17:42:44.727 [TestNG-test-Login Tests-1] INFO  tests.LoginTest - Valid login test passed
+2026-02-04 17:42:44.730 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - ========== Test Teardown Started ==========
+2026-02-04 17:42:44.754 [TestNG-test-Login Tests-3] INFO  pages.LoginPage - Clicked login button
+2026-02-04 17:42:44.766 [TestNG-test-Login Tests-3] INFO  actions.LoginAction - Login successful
+2026-02-04 17:42:44.767 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - ========== Test Teardown Started ==========
+2026-02-04 17:42:44.817 [TestNG-test-Login Tests-1] INFO  utils.DriverManager - Browser closed successfully
+2026-02-04 17:42:44.850 [TestNG-test-Login Tests-3] INFO  utils.DriverManager - Browser closed successfully
+2026-02-04 17:42:54.607 [TestNG-test-Login Tests-2] INFO  actions.LoginAction - Login failed
+2026-02-04 17:42:54.607 [TestNG-test-Login Tests-2] DEBUG utils.WaitHelper - Waiting for element to be visible: By.xpath: //div[@class='error-message-container error']/h3
+2026-02-04 17:42:54.627 [TestNG-test-Login Tests-2] INFO  tests.LoginTest - Invalid login test passed
+2026-02-04 17:42:54.628 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - ========== Test Teardown Started ==========
+2026-02-04 17:42:54.711 [TestNG-test-Login Tests-2] INFO  utils.DriverManager - Browser closed successfully
+2026-02-04 17:52:21.638 [main] INFO  listeners.TestListener - ==============================================
+2026-02-04 17:52:21.639 [main] INFO  listeners.TestListener - Test Suite Started: Login Tests
+2026-02-04 17:52:21.639 [main] INFO  listeners.TestListener - ==============================================
+2026-02-04 17:52:21.648 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - ========== Test Setup Started ==========
+2026-02-04 17:52:21.648 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - ========== Test Setup Started ==========
+2026-02-04 17:52:21.649 [TestNG-test-Login Tests-1] INFO  utils.ConfigReader - Configuration loaded successfully from: /Users/ritesh-mac/Documents/Selenium Project/selenium-tests/src/test/resources/config/config.properties
+2026-02-04 17:52:21.817 [TestNG-test-Login Tests-3] INFO  utils.ExcelReader - Test data loaded from: TestData.xlsx | Sheet: Sheet1
+2026-02-04 17:52:21.817 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - ========== Test Setup Started ==========
+2026-02-04 17:52:23.176 [TestNG-test-Login Tests-3] INFO  utils.DriverManager - Browser initialized: chrome | Headless: false
+2026-02-04 17:52:23.176 [TestNG-test-Login Tests-2] INFO  utils.DriverManager - Browser initialized: chrome | Headless: false
+2026-02-04 17:52:23.176 [TestNG-test-Login Tests-1] INFO  utils.DriverManager - Browser initialized: chrome | Headless: false
+2026-02-04 17:52:23.814 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - Navigated to: https://www.saucedemo.com/
+2026-02-04 17:52:23.814 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Navigated to: https://www.saucedemo.com/
+2026-02-04 17:52:23.815 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Navigated to: https://www.saucedemo.com/
+2026-02-04 17:52:23.829 [TestNG-test-Login Tests-3] INFO  utils.LogUtil - ========== TEST STARTED: testLoginWithDataProvider ==========
+2026-02-04 17:52:23.829 [TestNG-test-Login Tests-1] INFO  utils.LogUtil - ========== TEST STARTED: testValidLogin ==========
+2026-02-04 17:52:23.829 [TestNG-test-Login Tests-2] INFO  utils.LogUtil - ========== TEST STARTED: testInvalidLogin ==========
+2026-02-04 17:52:23.829 [TestNG-test-Login Tests-1] INFO  tests.LoginTest - Test: Valid Login
+2026-02-04 17:52:23.829 [TestNG-test-Login Tests-2] INFO  tests.LoginTest - Test: Invalid Login
+2026-02-04 17:52:23.831 [TestNG-test-Login Tests-2] INFO  actions.LoginAction - Performing login with username: Admin
+2026-02-04 17:52:23.831 [TestNG-test-Login Tests-1] INFO  actions.LoginAction - Performing login with username: standard_user
+2026-02-04 17:52:23.831 [TestNG-test-Login Tests-3] INFO  actions.LoginAction - Performing login with username: standard_user
+2026-02-04 17:52:23.831 [TestNG-test-Login Tests-1] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: user-name
+2026-02-04 17:52:23.832 [TestNG-test-Login Tests-3] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: user-name
+2026-02-04 17:52:23.832 [TestNG-test-Login Tests-2] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: user-name
+2026-02-04 17:52:24.003 [TestNG-test-Login Tests-1] INFO  pages.LoginPage - Entered username: standard_user
+2026-02-04 17:52:24.003 [TestNG-test-Login Tests-2] INFO  pages.LoginPage - Entered username: Admin
+2026-02-04 17:52:24.004 [TestNG-test-Login Tests-1] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: password
+2026-02-04 17:52:24.004 [TestNG-test-Login Tests-2] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: password
+2026-02-04 17:52:24.011 [TestNG-test-Login Tests-3] INFO  pages.LoginPage - Entered username: standard_user
+2026-02-04 17:52:24.011 [TestNG-test-Login Tests-3] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: password
+2026-02-04 17:52:24.068 [TestNG-test-Login Tests-3] INFO  pages.LoginPage - Entered password
+2026-02-04 17:52:24.068 [TestNG-test-Login Tests-3] DEBUG utils.WaitHelper - Waiting for element to be clickable: By.id: login-button
+2026-02-04 17:52:24.118 [TestNG-test-Login Tests-1] INFO  pages.LoginPage - Entered password
+2026-02-04 17:52:24.118 [TestNG-test-Login Tests-2] INFO  pages.LoginPage - Entered password
+2026-02-04 17:52:24.118 [TestNG-test-Login Tests-1] DEBUG utils.WaitHelper - Waiting for element to be clickable: By.id: login-button
+2026-02-04 17:52:24.118 [TestNG-test-Login Tests-2] DEBUG utils.WaitHelper - Waiting for element to be clickable: By.id: login-button
+2026-02-04 17:52:24.160 [TestNG-test-Login Tests-2] INFO  pages.LoginPage - Clicked login button
+2026-02-04 17:52:24.195 [TestNG-test-Login Tests-3] INFO  pages.LoginPage - Clicked login button
+2026-02-04 17:52:24.208 [TestNG-test-Login Tests-3] INFO  actions.LoginAction - Login successful
+2026-02-04 17:52:24.210 [TestNG-test-Login Tests-3] INFO  utils.LogUtil - ✓ TEST PASSED: testLoginWithDataProvider
+2026-02-04 17:52:24.212 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - ========== Test Teardown Started ==========
+2026-02-04 17:52:24.250 [TestNG-test-Login Tests-1] INFO  pages.LoginPage - Clicked login button
+2026-02-04 17:52:24.263 [TestNG-test-Login Tests-1] INFO  actions.LoginAction - Login successful
+2026-02-04 17:52:24.264 [TestNG-test-Login Tests-1] INFO  tests.LoginTest - Valid login test passed
+2026-02-04 17:52:24.265 [TestNG-test-Login Tests-1] INFO  utils.LogUtil - ✓ TEST PASSED: testValidLogin
+2026-02-04 17:52:24.265 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - ========== Test Teardown Started ==========
+2026-02-04 17:52:24.303 [TestNG-test-Login Tests-3] INFO  utils.DriverManager - Browser closed successfully
+2026-02-04 17:52:24.350 [TestNG-test-Login Tests-1] INFO  utils.DriverManager - Browser closed successfully
+2026-02-04 17:52:34.224 [TestNG-test-Login Tests-2] INFO  actions.LoginAction - Login failed
+2026-02-04 17:52:34.224 [TestNG-test-Login Tests-2] DEBUG utils.WaitHelper - Waiting for element to be visible: By.xpath: //div[@class='error-message-container error']/h3
+2026-02-04 17:52:34.253 [TestNG-test-Login Tests-2] INFO  tests.LoginTest - Invalid login test passed
+2026-02-04 17:52:34.253 [TestNG-test-Login Tests-2] INFO  utils.LogUtil - ✓ TEST PASSED: testInvalidLogin
+2026-02-04 17:52:34.254 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - ========== Test Teardown Started ==========
+2026-02-04 17:52:34.343 [TestNG-test-Login Tests-2] INFO  utils.DriverManager - Browser closed successfully
+2026-02-04 17:52:34.344 [main] INFO  listeners.TestListener - ==============================================
+2026-02-04 17:52:34.344 [main] INFO  listeners.TestListener - Test Suite Finished: Login Tests
+2026-02-04 17:52:34.344 [main] INFO  listeners.TestListener - Total Tests: 3
+2026-02-04 17:52:34.344 [main] INFO  listeners.TestListener - Passed: 3
+2026-02-04 17:52:34.344 [main] INFO  listeners.TestListener - Failed: 0
+2026-02-04 17:52:34.344 [main] INFO  listeners.TestListener - Skipped: 0
+2026-02-04 17:52:34.345 [main] INFO  listeners.TestListener - ==============================================
+2026-02-04 17:52:34.441 [main] INFO  listeners.TestListener - Extent Report generated successfully
+2026-02-04 17:53:05.973 [main] INFO  listeners.TestListener - ==============================================
+2026-02-04 17:53:05.974 [main] INFO  listeners.TestListener - Test Suite Started: Login Tests
+2026-02-04 17:53:05.974 [main] INFO  listeners.TestListener - ==============================================
+2026-02-04 17:53:05.983 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - ========== Test Setup Started ==========
+2026-02-04 17:53:05.983 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - ========== Test Setup Started ==========
+2026-02-04 17:53:05.984 [TestNG-test-Login Tests-2] INFO  utils.ConfigReader - Configuration loaded successfully from: /Users/ritesh-mac/Documents/Selenium Project/selenium-tests/src/test/resources/config/config.properties
+2026-02-04 17:53:06.147 [TestNG-test-Login Tests-3] INFO  utils.ExcelReader - Test data loaded from: TestData.xlsx | Sheet: Sheet1
+2026-02-04 17:53:06.147 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - ========== Test Setup Started ==========
+2026-02-04 17:53:07.550 [TestNG-test-Login Tests-3] INFO  utils.DriverManager - Browser initialized: chrome | Headless: false
+2026-02-04 17:53:07.550 [TestNG-test-Login Tests-2] INFO  utils.DriverManager - Browser initialized: chrome | Headless: false
+2026-02-04 17:53:07.550 [TestNG-test-Login Tests-1] INFO  utils.DriverManager - Browser initialized: chrome | Headless: false
+2026-02-04 17:53:08.156 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Navigated to: https://www.saucedemo.com/
+2026-02-04 17:53:08.156 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Navigated to: https://www.saucedemo.com/
+2026-02-04 17:53:08.156 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - Navigated to: https://www.saucedemo.com/
+2026-02-04 17:53:08.164 [TestNG-test-Login Tests-1] INFO  utils.LogUtil - ========== TEST STARTED: testValidLogin ==========
+2026-02-04 17:53:08.164 [TestNG-test-Login Tests-2] INFO  utils.LogUtil - ========== TEST STARTED: testInvalidLogin ==========
+2026-02-04 17:53:08.164 [TestNG-test-Login Tests-3] INFO  utils.LogUtil - ========== TEST STARTED: testLoginWithDataProvider ==========
+2026-02-04 17:53:08.165 [TestNG-test-Login Tests-2] INFO  tests.LoginTest - Test: Invalid Login
+2026-02-04 17:53:08.165 [TestNG-test-Login Tests-1] INFO  tests.LoginTest - Test: Valid Login
+2026-02-04 17:53:08.167 [TestNG-test-Login Tests-1] INFO  actions.LoginAction - Performing login with username: standard_user
+2026-02-04 17:53:08.167 [TestNG-test-Login Tests-3] INFO  actions.LoginAction - Performing login with username: standard_user
+2026-02-04 17:53:08.167 [TestNG-test-Login Tests-2] INFO  actions.LoginAction - Performing login with username: Admin
+2026-02-04 17:53:08.167 [TestNG-test-Login Tests-1] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: user-name
+2026-02-04 17:53:08.167 [TestNG-test-Login Tests-3] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: user-name
+2026-02-04 17:53:08.167 [TestNG-test-Login Tests-2] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: user-name
+2026-02-04 17:53:08.817 [TestNG-test-Login Tests-3] INFO  pages.LoginPage - Entered username: standard_user
+2026-02-04 17:53:08.817 [TestNG-test-Login Tests-2] INFO  pages.LoginPage - Entered username: Admin
+2026-02-04 17:53:08.817 [TestNG-test-Login Tests-1] INFO  pages.LoginPage - Entered username: standard_user
+2026-02-04 17:53:08.817 [TestNG-test-Login Tests-2] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: password
+2026-02-04 17:53:08.817 [TestNG-test-Login Tests-3] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: password
+2026-02-04 17:53:08.817 [TestNG-test-Login Tests-1] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: password
+2026-02-04 17:53:08.865 [TestNG-test-Login Tests-1] INFO  pages.LoginPage - Entered password
+2026-02-04 17:53:08.866 [TestNG-test-Login Tests-1] DEBUG utils.WaitHelper - Waiting for element to be clickable: By.id: login-button
+2026-02-04 17:53:08.917 [TestNG-test-Login Tests-2] INFO  pages.LoginPage - Entered password
+2026-02-04 17:53:08.917 [TestNG-test-Login Tests-3] INFO  pages.LoginPage - Entered password
+2026-02-04 17:53:08.917 [TestNG-test-Login Tests-3] DEBUG utils.WaitHelper - Waiting for element to be clickable: By.id: login-button
+2026-02-04 17:53:08.917 [TestNG-test-Login Tests-2] DEBUG utils.WaitHelper - Waiting for element to be clickable: By.id: login-button
+2026-02-04 17:53:08.960 [TestNG-test-Login Tests-2] INFO  pages.LoginPage - Clicked login button
+2026-02-04 17:53:08.992 [TestNG-test-Login Tests-1] INFO  pages.LoginPage - Clicked login button
+2026-02-04 17:53:09.011 [TestNG-test-Login Tests-1] INFO  actions.LoginAction - Login successful
+2026-02-04 17:53:09.013 [TestNG-test-Login Tests-1] INFO  tests.LoginTest - Valid login test passed
+2026-02-04 17:53:09.016 [TestNG-test-Login Tests-1] INFO  utils.LogUtil - ✓ TEST PASSED: testValidLogin
+2026-02-04 17:53:09.019 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - ========== Test Teardown Started ==========
+2026-02-04 17:53:09.055 [TestNG-test-Login Tests-3] INFO  pages.LoginPage - Clicked login button
+2026-02-04 17:53:09.067 [TestNG-test-Login Tests-3] INFO  actions.LoginAction - Login successful
+2026-02-04 17:53:09.068 [TestNG-test-Login Tests-3] INFO  utils.LogUtil - ✓ TEST PASSED: testLoginWithDataProvider
+2026-02-04 17:53:09.068 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - ========== Test Teardown Started ==========
+2026-02-04 17:53:09.110 [TestNG-test-Login Tests-1] INFO  utils.DriverManager - Browser closed successfully
+2026-02-04 17:53:09.148 [TestNG-test-Login Tests-3] INFO  utils.DriverManager - Browser closed successfully
+2026-02-04 17:53:18.981 [TestNG-test-Login Tests-2] INFO  actions.LoginAction - Login failed
+2026-02-04 17:53:18.982 [TestNG-test-Login Tests-2] DEBUG utils.WaitHelper - Waiting for element to be visible: By.xpath: //div[@class='error-message-container error']/h3
+2026-02-04 17:53:19.009 [TestNG-test-Login Tests-2] INFO  tests.LoginTest - Invalid login test passed
+2026-02-04 17:53:19.009 [TestNG-test-Login Tests-2] INFO  utils.LogUtil - ✓ TEST PASSED: testInvalidLogin
+2026-02-04 17:53:19.009 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - ========== Test Teardown Started ==========
+2026-02-04 17:53:19.095 [TestNG-test-Login Tests-2] INFO  utils.DriverManager - Browser closed successfully
+2026-02-04 17:53:19.095 [main] INFO  listeners.TestListener - ==============================================
+2026-02-04 17:53:19.095 [main] INFO  listeners.TestListener - Test Suite Finished: Login Tests
+2026-02-04 17:53:19.096 [main] INFO  listeners.TestListener - Total Tests: 3
+2026-02-04 17:53:19.096 [main] INFO  listeners.TestListener - Passed: 3
+2026-02-04 17:53:19.096 [main] INFO  listeners.TestListener - Failed: 0
+2026-02-04 17:53:19.096 [main] INFO  listeners.TestListener - Skipped: 0
+2026-02-04 17:53:19.096 [main] INFO  listeners.TestListener - ==============================================
+2026-02-04 17:53:19.185 [main] INFO  listeners.TestListener - Extent Report generated successfully
+2026-02-04 17:57:24.260 [main] INFO  listeners.TestListener - ==============================================
+2026-02-04 17:57:24.260 [main] INFO  listeners.TestListener - Test Suite Started: Login Tests
+2026-02-04 17:57:24.261 [main] INFO  listeners.TestListener - ==============================================
+2026-02-04 17:57:24.270 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - ========== Test Setup Started ==========
+2026-02-04 17:57:24.270 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - ========== Test Setup Started ==========
+2026-02-04 17:57:24.270 [TestNG-test-Login Tests-1] INFO  utils.ConfigReader - Configuration loaded successfully from: /Users/ritesh-mac/Documents/Selenium Project/selenium-tests/src/test/resources/config/config.properties
+2026-02-04 17:57:24.432 [TestNG-test-Login Tests-3] INFO  utils.ExcelReader - Test data loaded from: TestData.xlsx | Sheet: Sheet1
+2026-02-04 17:57:24.432 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - ========== Test Setup Started ==========
+2026-02-04 17:57:25.808 [TestNG-test-Login Tests-2] INFO  utils.DriverManager - Browser initialized: chrome | Headless: false
+2026-02-04 17:57:25.808 [TestNG-test-Login Tests-3] INFO  utils.DriverManager - Browser initialized: chrome | Headless: false
+2026-02-04 17:57:25.808 [TestNG-test-Login Tests-1] INFO  utils.DriverManager - Browser initialized: chrome | Headless: false
+2026-02-04 17:57:26.439 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Navigated to: https://www.saucedemo.com/
+2026-02-04 17:57:26.443 [TestNG-test-Login Tests-2] INFO  utils.LogUtil - ========== TEST STARTED: testInvalidLogin ==========
+2026-02-04 17:57:26.443 [TestNG-test-Login Tests-2] INFO  tests.LoginTest - Test: Invalid Login
+2026-02-04 17:57:26.445 [TestNG-test-Login Tests-2] INFO  actions.LoginAction - Performing login with username: Admin
+2026-02-04 17:57:26.445 [TestNG-test-Login Tests-2] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: user-name
+2026-02-04 17:57:26.481 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Navigated to: https://www.saucedemo.com/
+2026-02-04 17:57:26.482 [TestNG-test-Login Tests-1] INFO  utils.LogUtil - ========== TEST STARTED: testValidLogin ==========
+2026-02-04 17:57:26.482 [TestNG-test-Login Tests-1] INFO  tests.LoginTest - Test: Valid Login
+2026-02-04 17:57:26.482 [TestNG-test-Login Tests-1] INFO  actions.LoginAction - Performing login with username: standard_user
+2026-02-04 17:57:26.483 [TestNG-test-Login Tests-1] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: user-name
+2026-02-04 17:57:26.501 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - Navigated to: https://www.saucedemo.com/
+2026-02-04 17:57:26.502 [TestNG-test-Login Tests-3] INFO  utils.LogUtil - ========== TEST STARTED: testLoginWithDataProvider ==========
+2026-02-04 17:57:26.503 [TestNG-test-Login Tests-3] INFO  actions.LoginAction - Performing login with username: standard_user
+2026-02-04 17:57:26.503 [TestNG-test-Login Tests-3] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: user-name
+2026-02-04 17:57:26.618 [TestNG-test-Login Tests-2] INFO  pages.LoginPage - Entered username: Admin
+2026-02-04 17:57:26.619 [TestNG-test-Login Tests-2] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: password
+2026-02-04 17:57:26.635 [TestNG-test-Login Tests-1] INFO  pages.LoginPage - Entered username: standard_user
+2026-02-04 17:57:26.636 [TestNG-test-Login Tests-1] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: password
+2026-02-04 17:57:26.649 [TestNG-test-Login Tests-3] INFO  pages.LoginPage - Entered username: standard_user
+2026-02-04 17:57:26.649 [TestNG-test-Login Tests-3] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: password
+2026-02-04 17:57:26.703 [TestNG-test-Login Tests-1] INFO  pages.LoginPage - Entered password
+2026-02-04 17:57:26.703 [TestNG-test-Login Tests-1] DEBUG utils.WaitHelper - Waiting for element to be clickable: By.id: login-button
+2026-02-04 17:57:26.753 [TestNG-test-Login Tests-3] INFO  pages.LoginPage - Entered password
+2026-02-04 17:57:26.753 [TestNG-test-Login Tests-2] INFO  pages.LoginPage - Entered password
+2026-02-04 17:57:26.753 [TestNG-test-Login Tests-2] DEBUG utils.WaitHelper - Waiting for element to be clickable: By.id: login-button
+2026-02-04 17:57:26.753 [TestNG-test-Login Tests-3] DEBUG utils.WaitHelper - Waiting for element to be clickable: By.id: login-button
+2026-02-04 17:57:26.822 [TestNG-test-Login Tests-2] INFO  pages.LoginPage - Clicked login button
+2026-02-04 17:57:26.875 [TestNG-test-Login Tests-1] INFO  pages.LoginPage - Clicked login button
+2026-02-04 17:57:26.902 [TestNG-test-Login Tests-1] INFO  actions.LoginAction - Login successful
+2026-02-04 17:57:26.903 [TestNG-test-Login Tests-1] INFO  tests.LoginTest - Valid login test passed
+2026-02-04 17:57:26.908 [TestNG-test-Login Tests-1] INFO  utils.LogUtil - ✓ TEST PASSED: testValidLogin
+2026-02-04 17:57:26.909 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - ========== Test Teardown Started ==========
+2026-02-04 17:57:26.911 [TestNG-test-Login Tests-3] INFO  pages.LoginPage - Clicked login button
+2026-02-04 17:57:26.949 [TestNG-test-Login Tests-3] INFO  actions.LoginAction - Login successful
+2026-02-04 17:57:26.950 [TestNG-test-Login Tests-3] INFO  utils.LogUtil - ✓ TEST PASSED: testLoginWithDataProvider
+2026-02-04 17:57:26.951 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - ========== Test Teardown Started ==========
+2026-02-04 17:57:27.002 [TestNG-test-Login Tests-1] INFO  utils.DriverManager - Browser closed successfully
+2026-02-04 17:57:27.036 [TestNG-test-Login Tests-3] INFO  utils.DriverManager - Browser closed successfully
+2026-02-04 17:57:36.866 [TestNG-test-Login Tests-2] INFO  actions.LoginAction - Login failed
+2026-02-04 17:57:36.866 [TestNG-test-Login Tests-2] DEBUG utils.WaitHelper - Waiting for element to be visible: By.xpath: //div[@class='error-message-container error']/h3
+2026-02-04 17:57:36.894 [TestNG-test-Login Tests-2] INFO  tests.LoginTest - Invalid login test passed
+2026-02-04 17:57:36.894 [TestNG-test-Login Tests-2] INFO  utils.LogUtil - ✓ TEST PASSED: testInvalidLogin
+2026-02-04 17:57:36.895 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - ========== Test Teardown Started ==========
+2026-02-04 17:57:36.982 [TestNG-test-Login Tests-2] INFO  utils.DriverManager - Browser closed successfully
+2026-02-04 17:57:36.982 [main] INFO  listeners.TestListener - ==============================================
+2026-02-04 17:57:36.982 [main] INFO  listeners.TestListener - Test Suite Finished: Login Tests
+2026-02-04 17:57:36.983 [main] INFO  listeners.TestListener - Total Tests: 3
+2026-02-04 17:57:36.983 [main] INFO  listeners.TestListener - Passed: 3
+2026-02-04 17:57:36.983 [main] INFO  listeners.TestListener - Failed: 0
+2026-02-04 17:57:36.983 [main] INFO  listeners.TestListener - Skipped: 0
+2026-02-04 17:57:36.983 [main] INFO  listeners.TestListener - ==============================================
+2026-02-04 17:57:37.090 [main] INFO  listeners.TestListener - Extent Report generated successfully
+2026-02-04 17:59:01.541 [main] INFO  listeners.TestListener - ==============================================
+2026-02-04 17:59:01.542 [main] INFO  listeners.TestListener - Test Suite Started: Login Tests
+2026-02-04 17:59:01.542 [main] INFO  listeners.TestListener - ==============================================
+2026-02-04 17:59:01.551 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - ========== Test Setup Started ==========
+2026-02-04 17:59:01.551 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - ========== Test Setup Started ==========
+2026-02-04 17:59:01.552 [TestNG-test-Login Tests-1] INFO  utils.ConfigReader - Configuration loaded successfully from: /Users/ritesh-mac/Documents/Selenium Project/selenium-tests/src/test/resources/config/config.properties
+2026-02-04 17:59:01.720 [TestNG-test-Login Tests-3] INFO  utils.ExcelReader - Test data loaded from: TestData.xlsx | Sheet: Sheet1
+2026-02-04 17:59:01.721 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - ========== Test Setup Started ==========
+2026-02-04 17:59:03.129 [TestNG-test-Login Tests-1] INFO  utils.DriverManager - Browser initialized: chrome | Headless: false
+2026-02-04 17:59:03.129 [TestNG-test-Login Tests-2] INFO  utils.DriverManager - Browser initialized: chrome | Headless: false
+2026-02-04 17:59:03.129 [TestNG-test-Login Tests-3] INFO  utils.DriverManager - Browser initialized: chrome | Headless: false
+2026-02-04 17:59:03.726 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - Navigated to: https://www.saucedemo.com/
+2026-02-04 17:59:03.734 [TestNG-test-Login Tests-2] INFO  utils.LogUtil - ========== TEST STARTED: testInvalidLogin ==========
+2026-02-04 17:59:03.734 [TestNG-test-Login Tests-2] INFO  tests.LoginTest - Test: Invalid Login
+2026-02-04 17:59:03.735 [TestNG-test-Login Tests-2] INFO  actions.LoginAction - Performing login with username: Admin
+2026-02-04 17:59:03.735 [TestNG-test-Login Tests-2] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: user-name
+2026-02-04 17:59:03.749 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - Navigated to: https://www.saucedemo.com/
+2026-02-04 17:59:03.750 [TestNG-test-Login Tests-3] INFO  utils.LogUtil - ========== TEST STARTED: testLoginWithDataProvider ==========
+2026-02-04 17:59:03.752 [TestNG-test-Login Tests-3] INFO  actions.LoginAction - Performing login with username: standard_user
+2026-02-04 17:59:03.752 [TestNG-test-Login Tests-3] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: user-name
+2026-02-04 17:59:03.868 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - Navigated to: https://www.saucedemo.com/
+2026-02-04 17:59:03.869 [TestNG-test-Login Tests-1] INFO  utils.LogUtil - ========== TEST STARTED: testValidLogin ==========
+2026-02-04 17:59:03.870 [TestNG-test-Login Tests-1] INFO  tests.LoginTest - Test: Valid Login
+2026-02-04 17:59:03.870 [TestNG-test-Login Tests-1] INFO  actions.LoginAction - Performing login with username: standard_user
+2026-02-04 17:59:03.870 [TestNG-test-Login Tests-1] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: user-name
+2026-02-04 17:59:03.907 [TestNG-test-Login Tests-2] INFO  pages.LoginPage - Entered username: Admin
+2026-02-04 17:59:03.908 [TestNG-test-Login Tests-2] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: password
+2026-02-04 17:59:03.909 [TestNG-test-Login Tests-3] INFO  pages.LoginPage - Entered username: standard_user
+2026-02-04 17:59:03.909 [TestNG-test-Login Tests-3] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: password
+2026-02-04 17:59:03.988 [TestNG-test-Login Tests-1] INFO  pages.LoginPage - Entered username: standard_user
+2026-02-04 17:59:03.988 [TestNG-test-Login Tests-1] DEBUG utils.WaitHelper - Waiting for element to be visible: By.id: password
+2026-02-04 17:59:04.024 [TestNG-test-Login Tests-2] INFO  pages.LoginPage - Entered password
+2026-02-04 17:59:04.024 [TestNG-test-Login Tests-3] INFO  pages.LoginPage - Entered password
+2026-02-04 17:59:04.024 [TestNG-test-Login Tests-2] DEBUG utils.WaitHelper - Waiting for element to be clickable: By.id: login-button
+2026-02-04 17:59:04.024 [TestNG-test-Login Tests-3] DEBUG utils.WaitHelper - Waiting for element to be clickable: By.id: login-button
+2026-02-04 17:59:04.052 [TestNG-test-Login Tests-1] INFO  pages.LoginPage - Entered password
+2026-02-04 17:59:04.052 [TestNG-test-Login Tests-1] DEBUG utils.WaitHelper - Waiting for element to be clickable: By.id: login-button
+2026-02-04 17:59:04.085 [TestNG-test-Login Tests-2] INFO  pages.LoginPage - Clicked login button
+2026-02-04 17:59:04.163 [TestNG-test-Login Tests-3] INFO  pages.LoginPage - Clicked login button
+2026-02-04 17:59:04.175 [TestNG-test-Login Tests-3] INFO  actions.LoginAction - Login successful
+2026-02-04 17:59:04.178 [TestNG-test-Login Tests-3] INFO  utils.LogUtil - ✓ TEST PASSED: testLoginWithDataProvider
+2026-02-04 17:59:04.180 [TestNG-test-Login Tests-3] INFO  tests.BaseTest - ========== Test Teardown Started ==========
+2026-02-04 17:59:04.206 [TestNG-test-Login Tests-1] INFO  pages.LoginPage - Clicked login button
+2026-02-04 17:59:04.220 [TestNG-test-Login Tests-1] INFO  actions.LoginAction - Login successful
+2026-02-04 17:59:04.221 [TestNG-test-Login Tests-1] INFO  tests.LoginTest - Valid login test passed
+2026-02-04 17:59:04.222 [TestNG-test-Login Tests-1] INFO  utils.LogUtil - ✓ TEST PASSED: testValidLogin
+2026-02-04 17:59:04.222 [TestNG-test-Login Tests-1] INFO  tests.BaseTest - ========== Test Teardown Started ==========
+2026-02-04 17:59:04.272 [TestNG-test-Login Tests-3] INFO  utils.DriverManager - Browser closed successfully
+2026-02-04 17:59:04.316 [TestNG-test-Login Tests-1] INFO  utils.DriverManager - Browser closed successfully
+2026-02-04 17:59:14.147 [TestNG-test-Login Tests-2] INFO  actions.LoginAction - Login failed
+2026-02-04 17:59:14.147 [TestNG-test-Login Tests-2] DEBUG utils.WaitHelper - Waiting for element to be visible: By.xpath: //div[@class='error-message-container error']/h3
+2026-02-04 17:59:14.174 [TestNG-test-Login Tests-2] INFO  tests.LoginTest - Invalid login test passed
+2026-02-04 17:59:14.174 [TestNG-test-Login Tests-2] INFO  utils.LogUtil - ✓ TEST PASSED: testInvalidLogin
+2026-02-04 17:59:14.175 [TestNG-test-Login Tests-2] INFO  tests.BaseTest - ========== Test Teardown Started ==========
+2026-02-04 17:59:14.271 [TestNG-test-Login Tests-2] INFO  utils.DriverManager - Browser closed successfully
+2026-02-04 17:59:14.272 [main] INFO  listeners.TestListener - ==============================================
+2026-02-04 17:59:14.272 [main] INFO  listeners.TestListener - Test Suite Finished: Login Tests
+2026-02-04 17:59:14.272 [main] INFO  listeners.TestListener - Total Tests: 3
+2026-02-04 17:59:14.272 [main] INFO  listeners.TestListener - Passed: 3
+2026-02-04 17:59:14.272 [main] INFO  listeners.TestListener - Failed: 0
+2026-02-04 17:59:14.272 [main] INFO  listeners.TestListener - Skipped: 0
+2026-02-04 17:59:14.272 [main] INFO  listeners.TestListener - ==============================================
+2026-02-04 17:59:14.361 [main] INFO  listeners.TestListener - Extent Report generated successfully
